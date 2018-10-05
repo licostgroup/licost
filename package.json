@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://cookiehunter22.github.io/licost",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style=compressed -w scss/main.scss -o assets/css/",
-    "postcss": "postcss assets/css/main.css -u autoprefixer -m -r"
+    "postcss": "postcss assets/css/main.css -u autoprefixer -m -r",
+    "deploy": "gh-pages -d /"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
